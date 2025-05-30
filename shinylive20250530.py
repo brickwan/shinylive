@@ -1,6 +1,6 @@
 
-import sys
-print('运行版本是：',sys.version)#检查运行版本是否是python38,如果不是，则修改环境变量
+#import sys
+#print('运行版本是：',sys.version)#检查运行版本是否是python38,如果不是，则修改环境变量
 
 """
 #智能分析你实际用了哪些库
@@ -60,8 +60,9 @@ import shap
 # exit()
 
 # 设置matplotlib正常显示中文和负号
-plt.rcParams['font.sans-serif'] = ['SimHei']  # 指定默认字体为黑体
-plt.rcParams['axes.unicode_minus'] = False    # 解决保存图像时负号'-'显示为方块的问题
+plt.rcParams['font.family'] = 'sans-serif'
+plt.rcParams['font.sans-serif'] = ['Arial Unicode MS', 'SimSun', 'Microsoft YaHei', 'STSong']  # 按照平台设置优先级
+plt.rcParams['axes.unicode_minus'] = False  # 解决负号显示为方框的问题
 
 # 假设你有0个特征输入框
 NUM_FEATURES = 0
@@ -193,8 +194,8 @@ file_path = Path(__file__).parent / "train_data.csv"
 #loaded_model = joblib.load(Path(__file__).parent / 'linear_regression_model_313.pkl')
 
 # model = xgb.XGBRegressor()
-#model = joblib.load(Path(__file__).parent / 'jm_XGBClassifier_model_python38.pkl')
-model=[]
+model = joblib.load(Path(__file__).parent / 'jm_XGBClassifier_model_python38.pkl')
+#model=[]
 
 
 #result_str=''
