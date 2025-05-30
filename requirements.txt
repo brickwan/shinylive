@@ -8,6 +8,6 @@ pathlib
 seaborn
 shap
 shiny
-sklearn
+scikit-learn
 sys
 xgboost
