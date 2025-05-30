@@ -1,0 +1,12 @@
+{
+    "https://api.shinyapps.io": {
+        "server_url": "https://api.shinyapps.io",
+        "filename": "d:\\pycharm\\project\\shinylive",
+        "app_url": "https://brickwan.shinyapps.io/brick51/",
+        "app_id": 14848373,
+        "app_guid": null,
+        "title": "brick5",
+        "app_mode": "python-shiny",
+        "app_store_version": 1
+    }
+}
